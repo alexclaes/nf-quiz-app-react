@@ -1,0 +1,7 @@
+import styled from "styled-components";
+
+const PageWrapper = styled.main`
+  padding: 10rem 2rem 2rem 2rem;
+`;
+
+export default PageWrapper;
