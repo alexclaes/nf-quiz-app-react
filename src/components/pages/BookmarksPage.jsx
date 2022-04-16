@@ -1,3 +1,5 @@
-export default function BookmarksPage() {
-  return <h1>bookmarks</h1>;
+import CardList from "../CardList";
+
+export default function BookmarksPage({ cards, onToggleBookmark }) {
+  return <CardList cards={cards} onToggleBookmark={onToggleBookmark} />;
 }
