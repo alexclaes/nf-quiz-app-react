@@ -3,7 +3,11 @@ import BookmarkIcon from "./icons/BookmarkIcon";
 
 export default function BookmarkButton({ active, ...otherProps }) {
   return (
-    <StyledBookmarkButton active={active} {...otherProps}>
+    <StyledBookmarkButton
+      active={active}
+      {...otherProps}
+      aria-label={active ? "remove bookmark" : "save as bookmark"}
+    >
       <BookmarkIcon />
     </StyledBookmarkButton>
   );
