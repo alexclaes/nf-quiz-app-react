@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 :root {
@@ -9,7 +9,7 @@ const GlobalStyle = createGlobalStyle`
   --white: #ecf8f8;
   --black: #211103;
 
-  --ff-primary: sans-serif;
+  --ff-primary: 'Roboto', sans-serif;;
   --ff-serif: serif;
 
   --fs-200: 0.75rem;
