@@ -1,5 +1,5 @@
-import Card from "./Card";
-import styled from "styled-components";
+import Card from './Card/Card';
+import styled from 'styled-components';
 
 export default function CardList({ cards = [], onToggleBookmark }) {
   return (

@@ -1,7 +1,7 @@
-import { useState } from "react";
-import styled from "styled-components";
-import BookmarkButton from "./BookmarkButton";
-import Button from "./Button";
+import { useState } from 'react';
+import styled from 'styled-components';
+import BookmarkButton from '../BookmarkButton';
+import Button from '../Button';
 
 export default function Card({
   id,
@@ -20,7 +20,7 @@ export default function Card({
           setIsAnswerVisible(!isAnswerVisible);
         }}
       >
-        {isAnswerVisible ? "Hide answer" : "Show answer"}
+        {isAnswerVisible ? 'Hide answer' : 'Show answer'}
       </Button>
       {isAnswerVisible && <p>{answer}</p>}
       <StyledCardBookmark>

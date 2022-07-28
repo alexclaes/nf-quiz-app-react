@@ -1,9 +1,13 @@
-import styled from "styled-components";
-import BookmarkIcon from "./icons/BookmarkIcon";
+import styled from 'styled-components';
+import BookmarkIcon from './icons/BookmarkIcon';
 
 export default function BookmarkButton({ active, ...otherProps }) {
   return (
-    <StyledBookmarkButton active={active} {...otherProps}>
+    <StyledBookmarkButton
+      active={active}
+      aria-label={active ? 'remove bookmark' : 'save as bookmark'}
+      {...otherProps}
+    >
       <BookmarkIcon />
     </StyledBookmarkButton>
   );
@@ -14,7 +18,7 @@ const StyledBookmarkButton = styled.button`
   padding: 0.5rem;
   border-radius: 50%;
   background: var(--secondary);
-  color: var(--${({ active }) => (active ? "primary" : "white")});
+  color: var(--${({ active }) => (active ? 'primary' : 'white')});
 
   svg {
     fill: currentColor;
